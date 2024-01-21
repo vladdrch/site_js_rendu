@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Foot Info- Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Style CSS -->
+  <style>
+
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    .swiper {
+      
+      height: 30vh;
+    }
+
+    .swiper-slide {   
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+     min-height: 30vh;
+    }
+
+    .slide1 {
+      background-image: url('images/slide1.jpg');
+      background-size: cover;
+    }
+
+    .slide2 {
+      background-image: url('images/slide2.jpg');
+      background-size: cover;
+    }
+
+    .slide3 {
+      background-image: url('images/slide3.jpg');
+      background-size: cover;
+    }
+
+    .subtitle {
+      color: #fff;
+      font-size: 24px;
+      text-transform: lowercase;
+      letter-spacing: 3px;
+    }
+
+    .title {
+      font-weight: bold;
+      font-size: 72px;
+      color: white;
+      text-transform: lowercase;
+    }
+ 
+    .subtitle,
+    .title {
+      position: relative;
+    }
+
+    .subtitle {
+      align-self: flex-start;
+    }
+
+    .title {
+      margin-top: auto;
+      align-self: flex-end;
+    }
+
+
+    .swiper-pagination-bullet {
+      width: 18px;
+      height: 18px;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: orangered;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide slide1">
+        <p class="subtitle">SubTitle1</p>
+        <p class="title">Title Slide1</p>
+      </div>
+
+      <div class="swiper-slide slide2">
+        <p class="subtitle">SubTitle2</p>
+        <p class="title">Title Slide2</p>
+      </div>
+
+      <div class="swiper-slide slide3">
+        <p class="subtitle">SubTitle3</p>
+        <p class="title">Title Slide3</p>
+      </div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      let swiperElement = document.querySelector(".mySwiper");
+
+      if (swiperElement) {
+        let swiper = new Swiper(swiperElement, {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          autoplay: {
+            delay: 3000
+          }
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>

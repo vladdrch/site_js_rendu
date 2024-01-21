@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<title>Foot Info - Sondages</title>
+
+</head>
+<body>
+
+
+     <header class="header1">
+        <img class="image-right" src="images/BannerLeft.jpg" alt="BannerLeft">
+        <h1 >FOOT Info</h1>
+       
+<div id="mySideNav" class="sidenav">
+  <a id="closeButton" href="#" class="close">×</a>
+  <ul>
+      <li><a href="index.html">Accueil</a></li>
+            <li><a href="DailyPic.html">Photos du jour</a></li>
+            <li><a href="Sondage.html">Sondages</a></li>
+    <li><a href="forme.html">Contact</a></li>
+  </ul>
+</div>
+
+<a href="#" id="openButton">
+  <span class="burger-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </span>
+</a>
+  
+    </header>
+
+    <main>
+        <article>
+            <h2  class="h2sondage">Abonnez-vous!</h2>
+		<h3>Pour rester au courant merci de nous  énvoyer ce formulaire</h3>
+
+		<div class='message-error'>
+ 		 <ul></ul>
+		</div>
+		<div class='message-success'>
+ 		 <ul></ul>
+		</div>
+
+            <form action="" method="POST" enctype=”multipart/formdata”>
+            	
+		<div>
+                  <label for="pseudo">Pseudo  </label>
+                  <input type="text" id="pseudo" name="pseudo" placeholder="Votre Pseudo">
+		</div>
+
+                 <div>
+                  <label for="email">Email</label>
+                  <input type="text" id="email" name="email" placeholder="Votre Email">
+		</div>
+
+		
+
+ 		<div>
+                
+ <label for="freq">Vous voulez recevoir les nouvelles :</label>
+     			
+  		
+   		 <label> <input type="radio" name="frequance" value="week">Toutes les semaines
+     			 <input type="radio" name="frequance" value="month"> Tous les mois
+    	          </label>
+		</div>
+
+   <div>
+
+   
+    <label for="From">Quelle est votre club préferé :</label>
+    <select id="club" name="club">
+      <option value="" selected disabled>Sélectionnez un club</option>
+	<option value="Aucun">(Aucun)</option>
+      <option value="PSG">PSG</option>
+      <option value="RM">Real Madrid</option>
+      <option value="Juv">Juventus</option>
+     
+    </select>
+
+    </div>
+		<button type="submit"> Envoyer</button>
+
+
+            
+        </form>
+        </article>
+
+        
+
+      
+       
+       
+    </main>
+  
+<script src="main.js"></script>
+  
+
+</body>
+</html>
