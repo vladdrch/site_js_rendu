@@ -1,4 +1,4 @@
-﻿let form = document.querySelector('form')
+﻿ let form = document.querySelector('form')
 
 if (form) {
            form.addEventListener('submit',function(event)
@@ -12,7 +12,7 @@ if (form) {
    	errorList.innerHTML=""
    	errorContainer.classList.remove('visible')
 
-   if (email.value!=='' && email.value.includes('@') && email.value.includes('.'))
+   if (email.value!=='')
    { 
     email.classList.add('success')
 
@@ -61,27 +61,26 @@ messList.appendChild(mess)
 
 
     });
-}
-
+} 
 /*burger_menu*/
 
-let sideNav = document.getElementById("mySideNav");
+ let sideNav = document.getElementById("mySideNav");
 let openButton = document.getElementById("openButton");
 let closeButton = document.getElementById("closeButton");
 
 openButton.onclick = openNav;
 closeButton.onclick = closeNav;
 
-/* Set the width of the side navigation to 250px */
+
 function openNav() {
   sideNav .classList.add("active");
 }
 
-/* Set the width of the side navigation to 0 */
+
 function closeNav() {
   sideNav.classList.remove("active");
 }
-
+ 
 /*Slider*/
 document.addEventListener('DOMContentLoaded', function () {
       let swiperElement = document.querySelector(".mySwiper");
@@ -104,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 /*tab*/
 
-document.addEventListener('DOMContentLoaded', function() {
+ document.addEventListener('DOMContentLoaded', function() {
   const tabs = document.querySelectorAll('.tab');
   const contents = document.querySelectorAll('.content');
 
@@ -127,3 +126,16 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+ //dark-mode
+ document.addEventListener('DOMContentLoaded',function(){
+const siteDarkMode = document.querySelector('.site-dark-mode');
+
+if (siteDarkMode){
+
+  siteDarkMode.addEventListener('click', () => {
+    const body=document.body;
+    body.classList.toggle('dark');
+  });
+} 
+
+ });
