@@ -359,6 +359,8 @@ font-family: 'Roboto', sans-serif;
 .content.active {
   display: block;
 }
+
+
  /*dark mode*/
   body.dark{
   background-color: #333;
