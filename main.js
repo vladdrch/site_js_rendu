@@ -12,7 +12,7 @@ if (form) {
    	errorList.innerHTML=""
    	errorContainer.classList.remove('visible')
 
-   if (email.value!=='')
+   if (email.value !=='' && email.value.includes('@') && email.value.includes('.'))
    { 
     email.classList.add('success')
 
@@ -22,7 +22,7 @@ else   {
 	errorContainer.classList.add('visible')
 	email.classList.remove('success')
 	let err = document.createElement('li')
-	err.innerText ="Le email ne peut pas etre vide"
+	err.innerText ="Le email n'est pas valide"
 	errorList.appendChild(err)
 }
 
